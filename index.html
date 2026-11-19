@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Shabin T. R - Office Administration Specialist in Mannoorkonam, Nedumangad, Tvm. Direct contact, operations &amp; administration services, and payment details.">
-  <meta name="theme-color" content="#141f36">
+  <meta name="theme-color" content="#050811">
   <title>Shabin T. R - Office Administration Specialist | Digital Business Card</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +22,38 @@
     img{max-width:100%;height:auto}
     textarea{resize:vertical}
     input::placeholder,textarea::placeholder{opacity:1;color:#94a3b8}
-    .glow-accent{box-shadow:0 0 25px -5px rgba(245,158,11,0.45)}
-    .glow-accent-sm{box-shadow:0 0 15px -3px rgba(245,158,11,0.25)}
-    .glass-card{background:rgba(26,32,48,0.88);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,0.08)}
+    .glow-accent{box-shadow:0 0 28px -4px rgba(245,158,11,0.5),0 0 12px -2px rgba(245,158,11,0.3)}
+    .glow-accent-sm{box-shadow:0 0 18px -3px rgba(245,158,11,0.3)}
+    .glass-card{background:linear-gradient(145deg,rgba(17,24,39,0.78) 0%,rgba(10,15,29,0.88) 100%);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,0.08);box-shadow:0 10px 30px -10px rgba(0,0,0,0.5),inset 0 1px 0 0 rgba(255,255,255,0.1);transition:border-color 250ms ease,box-shadow 250ms ease,transform 250ms ease}
+    .glass-card:hover{border-color:rgba(245,158,11,0.22);box-shadow:0 14px 34px -10px rgba(0,0,0,0.65),0 0 20px -8px rgba(245,158,11,0.15),inset 0 1px 0 0 rgba(255,255,255,0.14)}
     ::-webkit-scrollbar{width:4px}
-    ::-webkit-scrollbar-thumb{background:rgba(245,158,11,0.25);border-radius:4px}
+    ::-webkit-scrollbar-thumb{background:rgba(245,158,11,0.3);border-radius:4px}
+    /* Executive Obsidian & Gold Aurora Backdrop System */
+    .ambient-page-bg{background-color:#050811;background-image:radial-gradient(at 15% 15%,rgba(245,158,11,0.12) 0px,transparent 50%),radial-gradient(at 85% 20%,rgba(79,70,229,0.14) 0px,transparent 55%),radial-gradient(at 50% 85%,rgba(217,119,6,0.09) 0px,transparent 55%);position:relative;overflow-x:hidden}
+    .ambient-page-grid{position:fixed;inset:0;pointer-events:none;z-index:0;background-size:32px 32px;background-image:linear-gradient(to right,rgba(255,255,255,0.025) 1px,transparent 1px),linear-gradient(to bottom,rgba(255,255,255,0.025) 1px,transparent 1px);mask-image:radial-gradient(ellipse 80% 70% at 50% 35%,#000 40%,transparent 100%);-webkit-mask-image:radial-gradient(ellipse 80% 70% at 50% 35%,#000 40%,transparent 100%)}
+    @keyframes floatAurora{
+      0%,100%{transform:translate(0,0) scale(1)}
+      33%{transform:translate(18px,-14px) scale(1.06)}
+      66%{transform:translate(-14px,12px) scale(0.96)}
+    }
+    @keyframes shimmerSweep{
+      0%{transform:translateX(-100%) rotate(25deg)}
+      100%{transform:translateX(200%) rotate(25deg)}
+    }
+    @keyframes slowRotate{
+      0%{transform:rotate(0deg)}
+      100%{transform:rotate(360deg)}
+    }
+    .aurora-orb-1{animation:floatAurora 14s ease-in-out infinite}
+    .aurora-orb-2{animation:floatAurora 18s ease-in-out infinite reverse}
+    .aurora-orb-3{animation:floatAurora 16s ease-in-out 2s infinite}
+    .card-surface{background:linear-gradient(165deg,rgba(15,22,38,0.92) 0%,rgba(8,12,22,0.96) 55%,rgba(12,18,32,0.95) 100%);backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);border-color:rgba(255,255,255,0.09);box-shadow:0 30px 70px -15px rgba(0,0,0,0.85),0 0 45px -10px rgba(245,158,11,0.12),inset 0 1px 0 0 rgba(255,255,255,0.12)}
+    .exec-header-canvas{position:relative;overflow:hidden;transition:background 500ms ease}
+    .exec-header-mesh{position:absolute;inset:0;opacity:0.85;transition:all 500ms ease}
+    .exec-header-arch{position:absolute;inset:0;opacity:0.35;pointer-events:none}
+    .exec-header-shimmer{position:absolute;inset:-50%;width:60%;height:200%;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.06),rgba(245,158,11,0.08),transparent);animation:shimmerSweep 9s ease-in-out infinite;pointer-events:none}
+    .quick-action-tile{background:linear-gradient(145deg,rgba(24,34,56,0.7) 0%,rgba(13,20,36,0.85) 100%);border:1px solid rgba(255,255,255,0.07);box-shadow:0 4px 15px -3px rgba(0,0,0,0.4),inset 0 1px 0 0 rgba(255,255,255,0.07)}
+    .quick-action-tile:hover{background:linear-gradient(145deg,rgba(30,43,70,0.85) 0%,rgba(17,26,46,0.95) 100%);border-color:rgba(245,158,11,0.3);transform:translateY(-2px)}
     .relative{position:relative}
     .absolute{position:absolute}
     .fixed{position:fixed}
@@ -286,35 +313,75 @@
     }
   </style>
 </head>
-<body class="text-slate-100 min-h-screen flex justify-center items-start sm:py-8 sm:px-4" style="background-color: #0c1322;">
+<body class="ambient-page-bg text-slate-100 min-h-screen flex justify-center items-start sm:py-8 sm:px-4">
+  <!-- Ambient Architectural Micro-Grid & Floating Aurora Glows -->
+  <div class="ambient-page-grid"></div>
+  <div class="fixed -top-12 left-4 w-48 h-48 rounded-full filter blur-3xl opacity-25 pointer-events-none aurora-orb-1" style="background: radial-gradient(circle, #F59E0B, transparent 70%);"></div>
+  <div class="fixed bottom-20 right-4 w-48 h-48 rounded-full filter blur-3xl opacity-25 pointer-events-none aurora-orb-2" style="background: radial-gradient(circle, #6366f1, transparent 70%);"></div>
 
   <!-- ========================================================================= -->
-  <!-- 🪪 MAIN CARD CONTAINER (Optimized for Mobile & Desktop: Max Width 440px) -->
+  <!-- 🪪 MAIN CARD CONTAINER (Executive Obsidian & Gold Aurora Architecture)    -->
   <!-- ========================================================================= -->
-  <main class="w-full max-w-[560px] min-h-screen sm:min-h-0 sm:rounded-3xl sm:border shadow-2xl relative overflow-hidden pb-24" style="background-color: #141f36; border-color: rgba(255, 255, 255, 0.08);">
-    
-    <!-- Top Header Cover Banner (LinkedIn / Facebook Style Cover Photo) -->
-    <div id="coverBanner" class="relative h-44 sm:h-48 w-full overflow-hidden" style="background: linear-gradient(to top right, #1f1906, #3d2e05, #F59E0B);">
-      <!-- Cover Scenario Image Layer -->
-      <img id="coverBannerImg" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" alt="Executive Workspace Cover" class="cover-banner-img absolute inset-0 w-full h-full object-cover object-center" />
-      <!-- Dark Vignette & Cyber Grid Overlay for Readability -->
-      <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(12,19,34,0.45) 0%, rgba(12,19,34,0.2) 50%, rgba(20,31,54,0.95) 100%);"></div>
-      <div class="absolute inset-0 opacity-25 [background-size:16px_16px]" style="background-image: radial-gradient(#F59E0B 1px, transparent 1px);"></div>
-      <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full filter blur-3xl opacity-35" style="background-color: #F59E0B;"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-16" style="background-image: linear-gradient(to top, #141f36, transparent);"></div>
+  <main class="card-surface w-full max-w-[560px] min-h-screen sm:min-h-0 sm:rounded-3xl sm:border shadow-2xl relative overflow-hidden pb-24 z-10">
+    <!-- Subtle Internal Ambient Orbs inside Card Surface -->
+    <div class="absolute top-40 -right-12 w-48 h-48 rounded-full filter blur-3xl opacity-25 pointer-events-none" style="background: radial-gradient(circle, rgba(245,158,11,0.28), transparent 70%);"></div>
+    <div class="absolute bottom-20 -left-12 w-48 h-48 rounded-full filter blur-3xl opacity-25 pointer-events-none" style="background: radial-gradient(circle, rgba(99,102,241,0.25), transparent 70%);"></div>
+
+    <!-- Top Header Executive Abstract / Geometric Aurora Canvas -->
+    <div id="coverBanner" class="exec-header-canvas relative h-44 sm:h-48 w-full overflow-hidden" style="background: radial-gradient(circle at 85% 20%, rgba(245, 158, 11, 0.42) 0%, rgba(180, 83, 9, 0.18) 38%, transparent 70%), radial-gradient(circle at 15% 80%, rgba(79, 70, 229, 0.35) 0%, transparent 65%), linear-gradient(135deg, #050811 0%, #0d1527 50%, #1a1408 100%);">
+      <!-- Dynamic Custom Image Layer (Hidden by default in abstract mode, active only if user selects a custom image) -->
+      <img id="coverBannerImg" src="" alt="Executive Header Backdrop" class="cover-banner-img hidden absolute inset-0 w-full h-full object-cover object-center" />
+      
+      <!-- Animated Aurora Orbs & Shimmer Sweep -->
+      <div id="coverAuroraLayer" class="exec-header-mesh">
+        <div class="aurora-orb-1 absolute -top-12 -right-12 w-48 h-48 rounded-full filter blur-3xl opacity-35" style="background-color: #F59E0B;"></div>
+        <div class="aurora-orb-2 absolute bottom-0 left-4 w-44 h-44 rounded-full filter blur-3xl opacity-25" style="background-color: #6366f1;"></div>
+        <div class="exec-header-shimmer"></div>
+      </div>
+
+      <!-- Precision Geometric Architectural Vector Overlay -->
+      <svg id="coverGeoSvg" class="exec-header-arch w-full h-full" viewBox="0 0 560 200" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <linearGradient id="goldArchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.65" />
+            <stop offset="50%" stop-color="#fde68a" stop-opacity="0.25" />
+            <stop offset="100%" stop-color="#6366f1" stop-opacity="0.05" />
+          </linearGradient>
+          <linearGradient id="indigoArchGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#818cf8" stop-opacity="0.45" />
+            <stop offset="100%" stop-color="#F59E0B" stop-opacity="0.1" />
+          </linearGradient>
+        </defs>
+        <!-- Perspective Architectural Grid & Luxury Curves -->
+        <path d="M-40 180 C 120 70, 320 220, 600 40" stroke="url(#goldArchGrad)" stroke-width="1.5" />
+        <path d="M-40 140 C 160 30, 350 180, 600 10" stroke="url(#goldArchGrad)" stroke-width="0.9" stroke-dasharray="4 4" />
+        <path d="M-20 40 C 180 160, 390 10, 580 150" stroke="url(#indigoArchGrad)" stroke-width="1.2" />
+        <!-- Geometric Accent Rings & Nodes -->
+        <circle cx="460" cy="48" r="64" stroke="url(#goldArchGrad)" stroke-width="1" stroke-dasharray="3 6" />
+        <circle cx="460" cy="48" r="96" stroke="url(#goldArchGrad)" stroke-width="0.6" />
+        <circle cx="460" cy="48" r="3" fill="#fde68a" fill-opacity="0.8" />
+        <circle cx="135" cy="118" r="2.5" fill="#F59E0B" fill-opacity="0.6" />
+        <circle cx="325" cy="128" r="2" fill="#818cf8" fill-opacity="0.7" />
+        <!-- Subtle Isometric Diamond Lines -->
+        <polygon points="460,12 496,48 460,84 424,48" stroke="url(#goldArchGrad)" stroke-width="0.75" fill="rgba(245,158,11,0.03)" />
+      </svg>
+
+      <!-- Micro Dot Matrix & Seamless Bottom Obsidian Fade -->
+      <div class="absolute inset-0 opacity-25 [background-size:16px_16px]" style="background-image: radial-gradient(rgba(253, 230, 138, 0.55) 1px, transparent 1px);"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-16" style="background-image: linear-gradient(to top, #0c1220 8%, transparent);"></div>
       
       <!-- Top Action Bar -->
       <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-10">
         <!-- Professional Pill Badge -->
-        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10">
-          <span class="w-2 h-2 rounded-full" style="background-color: #F59E0B;"></span>
-          <span class="text-[11px] font-semibold text-slate-200">Office Operations &amp; Executive Administration</span>
+        <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-full bg-black/50 backdrop-blur-md border border-white/10 shadow-md">
+          <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: #F59E0B; box-shadow: 0 0 8px #F59E0B;"></span>
+          <span class="text-[11px] font-semibold text-slate-100">Office Operations &amp; Executive Administration</span>
         </div>
 
         <div class="flex items-center gap-2">
-          <button onclick="openCoverModal()" class="w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-black/60 transition active:scale-95" title="Change Cover Photo" aria-label="Change Cover Photo">
+          <button onclick="openCoverModal()" class="w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-amber-400 hover:bg-black/60 transition active:scale-95" title="Change Backdrop Theme" aria-label="Change Backdrop Theme">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
             </svg>
           </button>
           <button onclick="openShareModal()" class="w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-black/60 transition active:scale-95" title="Share Card" aria-label="Share Card">
@@ -330,13 +397,12 @@
         </div>
       </div>
 
-      <!-- Bottom-Right Cover Changer Pill (LinkedIn / Facebook Style) -->
-      <button onclick="openCoverModal()" class="absolute bottom-3 right-4 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/50 hover:bg-black/60 backdrop-blur-md border border-white/10 text-[10px] font-semibold text-slate-200 transition active:scale-95 shadow-md" title="Choose Cover Scenario">
+      <!-- Bottom-Right Executive Backdrop Style Switcher Pill -->
+      <button onclick="openCoverModal()" class="absolute bottom-3 right-4 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/50 hover:bg-black/60 backdrop-blur-md border border-white/10 text-[10px] font-semibold text-slate-200 transition active:scale-95 shadow-md" title="Switch Executive Backdrop Theme">
         <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
         </svg>
-        <span id="activeCoverLabel">Executive Suite</span>
+        <span id="activeCoverLabel">Obsidian Gold Aurora</span>
       </button>
     </div>
 
@@ -390,25 +456,25 @@
       </div>
 
       <div class="grid grid-cols-4 gap-2.5 mt-4 text-center">
-        <a href="tel:+916235712497" class="flex flex-col items-center justify-center rounded-xl py-3 px-2 bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 text-amber-400 transition active:scale-95">
+        <a href="tel:+916235712497" class="quick-action-tile flex flex-col items-center justify-center rounded-xl py-3 px-2 text-amber-400 transition active:scale-95">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
           </svg>
           <span class="block text-slate-200 text-xs font-semibold mt-1.5">Call</span>
         </a>
-        <a href="https://wa.me/916235712497" target="_blank" rel="noopener" class="flex flex-col items-center justify-center rounded-xl py-3 px-2 bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 text-emerald-400 transition active:scale-95">
+        <a href="https://wa.me/916235712497" target="_blank" rel="noopener" class="quick-action-tile flex flex-col items-center justify-center rounded-xl py-3 px-2 text-emerald-400 transition active:scale-95">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.474 1.332 4.988L2 22l5.18-1.359c1.464.798 3.111 1.219 4.848 1.219 5.516 0 9.969-4.453 9.969-9.969 0-2.664-1.037-5.168-2.921-7.051C17.193 2.956 14.695 2 12.031 2zm0 1.682c2.213 0 4.293.863 5.858 2.429 1.564 1.565 2.425 3.646 2.425 5.859 0 4.568-3.716 8.285-8.286 8.285-1.487 0-2.946-.398-4.221-1.153l-.303-.18-3.141.824.839-3.061-.197-.314a8.234 8.234 0 01-1.26-4.401c0-4.569 3.717-8.288 8.286-8.288zm-3.575 3.635c-.188 0-.488.07-.744.35-.256.28-.978.955-.978 2.329s1.001 2.702 1.141 2.889c.14.186 1.933 3.095 4.773 4.215 2.358.93 2.838.745 3.35.698.512-.046 1.653-.675 1.886-1.328.233-.652.233-1.211.163-1.328-.07-.116-.256-.186-.536-.326-.279-.14-1.653-.816-1.909-.909-.256-.093-.442-.14-.629.14-.186.279-.721.908-.884 1.095-.163.186-.326.21-.605.07-.279-.14-1.18-.435-2.247-1.386-.831-.741-1.391-1.657-1.554-1.936-.163-.28-.018-.431.122-.57.126-.125.279-.326.419-.489.14-.163.186-.28.279-.466.093-.186.047-.349-.023-.489-.07-.14-.614-1.522-.861-2.073-.219-.489-.447-.471-.629-.477-.162-.006-.349-.007-.535-.007z"/>
           </svg>
           <span class="block text-slate-200 text-xs font-semibold mt-1.5">WhatsApp</span>
         </a>
-        <a href="mailto:shabinthaj142@gmail.com" class="flex flex-col items-center justify-center rounded-xl py-3 px-2 bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 text-sky-400 transition active:scale-95">
+        <a href="mailto:shabinthaj142@gmail.com" class="quick-action-tile flex flex-col items-center justify-center rounded-xl py-3 px-2 text-sky-400 transition active:scale-95">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
           </svg>
           <span class="block text-slate-200 text-xs font-semibold mt-1.5">Email</span>
         </a>
-        <a href="https://maps.google.com/?q=Mannoorkonam,+Nedumangad,+Tvm" target="_blank" rel="noopener" class="flex flex-col items-center justify-center rounded-xl py-3 px-2 bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 text-rose-400 transition active:scale-95">
+        <a href="https://maps.google.com/?q=Mannoorkonam,+Nedumangad,+Tvm" target="_blank" rel="noopener" class="quick-action-tile flex flex-col items-center justify-center rounded-xl py-3 px-2 text-rose-400 transition active:scale-95">
           <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
             <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -420,7 +486,7 @@
 
     <!-- Navigation Tabs (Profile, Business, Payment, Contact Me) -->
     <div class="px-5 mt-5">
-      <div class="flex items-center p-1 bg-slate-900/90 border border-slate-800 rounded-xl">
+      <div class="flex items-center p-1 rounded-xl border" style="background: rgba(6, 10, 20, 0.85); border-color: rgba(255, 255, 255, 0.08); box-shadow: inset 0 2px 6px rgba(0,0,0,0.6);">
         <button onclick="switchTab('profile')" id="tab-profile" class="tab-btn flex-1 py-1.5 text-xs font-bold rounded-lg transition text-slate-950 shadow" style="background-color: #F59E0B;">
           Profile
         </button>
@@ -757,7 +823,7 @@
 
     <!-- QR Code Modal -->
     <div id="qrModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-      <div class="border border-slate-800 p-6 rounded-3xl max-w-xs w-full text-center relative shadow-2xl" style="background-color: #141f36;">
+      <div class="card-surface border p-6 rounded-3xl max-w-xs w-full text-center relative shadow-2xl">
         <button onclick="closeQRModal()" aria-label="Close QR Modal" class="absolute top-4 right-4 w-7 h-7 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">✕</button>
         <div class="w-16 h-16 rounded-full mx-auto p-1 mb-3 shadow-md" style="background: linear-gradient(to top right, #F59E0B, #fde68a);">
           <img src="data:image/webp;base64,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" alt="Shabin T. R" width="64" height="64" loading="lazy" decoding="async" class="w-full h-full rounded-full object-cover object-center bg-black" />
@@ -766,14 +832,17 @@
         <p class="text-[11px] text-slate-400 mt-0.5">Office Administration Specialist • Operations &amp; Management</p>
         
         <div class="mt-4 p-2.5 bg-white rounded-2xl inline-block shadow-inner">
-          <svg class="w-44 h-44 text-slate-950" viewBox="0 0 33 33" shape-rendering="crispEdges" fill="currentColor">
+          <svg id="qrModalSvg" class="w-44 h-44 text-slate-950" viewBox="0 0 33 33" shape-rendering="crispEdges" fill="currentColor">
             <path d="M2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM11 2h1v1h-1zM14 2h1v1h-1zM16 2h1v1h-1zM19 2h1v1h-1zM20 2h1v1h-1zM21 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM26 2h1v1h-1zM27 2h1v1h-1zM28 2h1v1h-1zM29 2h1v1h-1zM30 2h1v1h-1zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM14 3h1v1h-1zM15 3h1v1h-1zM16 3h1v1h-1zM17 3h1v1h-1zM18 3h1v1h-1zM19 3h1v1h-1zM21 3h1v1h-1zM24 3h1v1h-1zM30 3h1v1h-1zM2 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM8 4h1v1h-1zM11 4h1v1h-1zM12 4h1v1h-1zM16 4h1v1h-1zM17 4h1v1h-1zM20 4h1v1h-1zM24 4h1v1h-1zM26 4h1v1h-1zM27 4h1v1h-1zM28 4h1v1h-1zM30 4h1v1h-1zM2 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM14 5h1v1h-1zM15 5h1v1h-1zM16 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM21 5h1v1h-1zM22 5h1v1h-1zM24 5h1v1h-1zM26 5h1v1h-1zM27 5h1v1h-1zM28 5h1v1h-1zM30 5h1v1h-1zM2 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM11 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM21 6h1v1h-1zM24 6h1v1h-1zM26 6h1v1h-1zM27 6h1v1h-1zM28 6h1v1h-1zM30 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM14 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM20 7h1v1h-1zM21 7h1v1h-1zM22 7h1v1h-1zM24 7h1v1h-1zM30 7h1v1h-1zM2 8h1v1h-1zM3 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM7 8h1v1h-1zM8 8h1v1h-1zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM25 8h1v1h-1zM26 8h1v1h-1zM27 8h1v1h-1zM28 8h1v1h-1zM29 8h1v1h-1zM30 8h1v1h-1zM11 9h1v1h-1zM12 9h1v1h-1zM15 9h1v1h-1zM16 9h1v1h-1zM18 9h1v1h-1zM19 9h1v1h-1zM20 9h1v1h-1zM21 9h1v1h-1zM2 10h1v1h-1zM4 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1zM11 10h1v1h-1zM12 10h1v1h-1zM13 10h1v1h-1zM14 10h1v1h-1zM15 10h1v1h-1zM16 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM19 10h1v1h-1zM21 10h1v1h-1zM22 10h1v1h-1zM26 10h1v1h-1zM29 10h1v1h-1zM3 11h1v1h-1zM4 11h1v1h-1zM5 11h1v1h-1zM6 11h1v1h-1zM9 11h1v1h-1zM11 11h1v1h-1zM13 11h1v1h-1zM18 11h1v1h-1zM19 11h1v1h-1zM22 11h1v1h-1zM23 11h1v1h-1zM24 11h1v1h-1zM27 11h1v1h-1zM30 11h1v1h-1zM2 12h1v1h-1zM3 12h1v1h-1zM4 12h1v1h-1zM6 12h1v1h-1zM7 12h1v1h-1zM8 12h1v1h-1zM9 12h1v1h-1zM14 12h1v1h-1zM15 12h1v1h-1zM19 12h1v1h-1zM20 12h1v1h-1zM28 12h1v1h-1zM29 12h1v1h-1zM30 12h1v1h-1zM3 13h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM6 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM11 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM17 13h1v1h-1zM19 13h1v1h-1zM22 13h1v1h-1zM25 13h1v1h-1zM29 13h1v1h-1zM2 14h1v1h-1zM4 14h1v1h-1zM5 14h1v1h-1zM6 14h1v1h-1zM7 14h1v1h-1zM8 14h1v1h-1zM9 14h1v1h-1zM10 14h1v1h-1zM11 14h1v1h-1zM13 14h1v1h-1zM14 14h1v1h-1zM16 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM19 14h1v1h-1zM20 14h1v1h-1zM22 14h1v1h-1zM23 14h1v1h-1zM24 14h1v1h-1zM27 14h1v1h-1zM29 14h1v1h-1zM30 14h1v1h-1zM5 15h1v1h-1zM6 15h1v1h-1zM10 15h1v1h-1zM11 15h1v1h-1zM18 15h1v1h-1zM22 15h1v1h-1zM23 15h1v1h-1zM24 15h1v1h-1zM27 15h1v1h-1zM30 15h1v1h-1zM3 16h1v1h-1zM5 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM9 16h1v1h-1zM10 16h1v1h-1zM12 16h1v1h-1zM13 16h1v1h-1zM14 16h1v1h-1zM15 16h1v1h-1zM18 16h1v1h-1zM19 16h1v1h-1zM22 16h1v1h-1zM23 16h1v1h-1zM25 16h1v1h-1zM26 16h1v1h-1zM27 16h1v1h-1zM29 16h1v1h-1zM30 16h1v1h-1zM5 17h1v1h-1zM9 17h1v1h-1zM10 17h1v1h-1zM11 17h1v1h-1zM12 17h1v1h-1zM14 17h1v1h-1zM19 17h1v1h-1zM22 17h1v1h-1zM23 17h1v1h-1zM24 17h1v1h-1zM25 17h1v1h-1zM27 17h1v1h-1zM29 17h1v1h-1zM2 18h1v1h-1zM4 18h1v1h-1zM6 18h1v1h-1zM7 18h1v1h-1zM8 18h1v1h-1zM11 18h1v1h-1zM12 18h1v1h-1zM13 18h1v1h-1zM14 18h1v1h-1zM18 18h1v1h-1zM19 18h1v1h-1zM21 18h1v1h-1zM22 18h1v1h-1zM24 18h1v1h-1zM27 18h1v1h-1zM29 18h1v1h-1zM30 18h1v1h-1zM4 19h1v1h-1zM10 19h1v1h-1zM11 19h1v1h-1zM13 19h1v1h-1zM14 19h1v1h-1zM15 19h1v1h-1zM18 19h1v1h-1zM24 19h1v1h-1zM27 19h1v1h-1zM28 19h1v1h-1zM30 19h1v1h-1zM2 20h1v1h-1zM4 20h1v1h-1zM5 20h1v1h-1zM6 20h1v1h-1zM7 20h1v1h-1zM8 20h1v1h-1zM13 20h1v1h-1zM14 20h1v1h-1zM16 20h1v1h-1zM20 20h1v1h-1zM24 20h1v1h-1zM26 20h1v1h-1zM29 20h1v1h-1zM30 20h1v1h-1zM3 21h1v1h-1zM4 21h1v1h-1zM7 21h1v1h-1zM11 21h1v1h-1zM15 21h1v1h-1zM16 21h1v1h-1zM17 21h1v1h-1zM19 21h1v1h-1zM20 21h1v1h-1zM23 21h1v1h-1zM24 21h1v1h-1zM25 21h1v1h-1zM26 21h1v1h-1zM27 21h1v1h-1zM29 21h1v1h-1zM2 22h1v1h-1zM5 22h1v1h-1zM7 22h1v1h-1zM8 22h1v1h-1zM9 22h1v1h-1zM10 22h1v1h-1zM11 22h1v1h-1zM13 22h1v1h-1zM14 22h1v1h-1zM16 22h1v1h-1zM18 22h1v1h-1zM19 22h1v1h-1zM22 22h1v1h-1zM23 22h1v1h-1zM24 22h1v1h-1zM25 22h1v1h-1zM26 22h1v1h-1zM10 23h1v1h-1zM11 23h1v1h-1zM12 23h1v1h-1zM14 23h1v1h-1zM16 23h1v1h-1zM18 23h1v1h-1zM22 23h1v1h-1zM26 23h1v1h-1zM28 23h1v1h-1zM29 23h1v1h-1zM30 23h1v1h-1zM2 24h1v1h-1zM3 24h1v1h-1zM4 24h1v1h-1zM5 24h1v1h-1zM6 24h1v1h-1zM7 24h1v1h-1zM8 24h1v1h-1zM15 24h1v1h-1zM18 24h1v1h-1zM19 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM24 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM29 24h1v1h-1zM30 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM11 25h1v1h-1zM12 25h1v1h-1zM13 25h1v1h-1zM14 25h1v1h-1zM17 25h1v1h-1zM19 25h1v1h-1zM20 25h1v1h-1zM21 25h1v1h-1zM22 25h1v1h-1zM26 25h1v1h-1zM27 25h1v1h-1zM30 25h1v1h-1zM2 26h1v1h-1zM4 26h1v1h-1zM5 26h1v1h-1zM6 26h1v1h-1zM8 26h1v1h-1zM10 26h1v1h-1zM12 26h1v1h-1zM13 26h1v1h-1zM14 26h1v1h-1zM17 26h1v1h-1zM18 26h1v1h-1zM19 26h1v1h-1zM20 26h1v1h-1zM22 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM26 26h1v1h-1zM29 26h1v1h-1zM30 26h1v1h-1zM2 27h1v1h-1zM4 27h1v1h-1zM5 27h1v1h-1zM6 27h1v1h-1zM8 27h1v1h-1zM11 27h1v1h-1zM12 27h1v1h-1zM15 27h1v1h-1zM18 27h1v1h-1zM21 27h1v1h-1zM22 27h1v1h-1zM23 27h1v1h-1zM25 27h1v1h-1zM26 27h1v1h-1zM28 27h1v1h-1zM29 27h1v1h-1zM30 27h1v1h-1zM2 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM10 28h1v1h-1zM11 28h1v1h-1zM14 28h1v1h-1zM15 28h1v1h-1zM16 28h1v1h-1zM19 28h1v1h-1zM22 28h1v1h-1zM23 28h1v1h-1zM25 28h1v1h-1zM26 28h1v1h-1zM27 28h1v1h-1zM30 28h1v1h-1zM2 29h1v1h-1zM8 29h1v1h-1zM11 29h1v1h-1zM12 29h1v1h-1zM13 29h1v1h-1zM15 29h1v1h-1zM19 29h1v1h-1zM20 29h1v1h-1zM22 29h1v1h-1zM23 29h1v1h-1zM26 29h1v1h-1zM29 29h1v1h-1zM2 30h1v1h-1zM3 30h1v1h-1zM4 30h1v1h-1zM5 30h1v1h-1zM6 30h1v1h-1zM7 30h1v1h-1zM8 30h1v1h-1zM10 30h1v1h-1zM11 30h1v1h-1zM14 30h1v1h-1zM15 30h1v1h-1zM16 30h1v1h-1zM22 30h1v1h-1zM26 30h1v1h-1zM27 30h1v1h-1zM29 30h1v1h-1zM30 30h1v1h-1z" />
           </svg>
         </div>
+        <div class="mt-2 text-[10px] text-slate-400">
+          Active Theme Link: <span id="qrThemeBadge" class="font-semibold text-amber-400">Obsidian Gold Aurora</span>
+        </div>
         
-        <div class="mt-4">
-          <button onclick="copyToClipboard('https://shabin2223.github.io/Shabin_DC/', 'Card link copied!')" class="w-full py-2 px-3 rounded-xl border text-xs font-semibold hover:opacity-90 transition" style="background: #F59E0B15; color: #F59E0B; border-color: #F59E0B35;">
-            Copy Card Link
+        <div class="mt-3">
+          <button onclick="copyShareableCardLink()" class="w-full py-2 px-3 rounded-xl border text-xs font-semibold hover:opacity-90 transition" style="background: #F59E0B15; color: #F59E0B; border-color: #F59E0B35;">
+            Copy Theme Card Link
           </button>
         </div>
       </div>
@@ -781,13 +850,13 @@
 
     <!-- Share Modal -->
     <div id="shareModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-      <div class="border border-slate-800 p-6 rounded-3xl max-w-xs w-full text-center relative shadow-2xl" style="background-color: #141f36;">
+      <div class="card-surface border p-6 rounded-3xl max-w-xs w-full text-center relative shadow-2xl">
         <button onclick="closeShareModal()" aria-label="Close Share Modal" class="absolute top-4 right-4 w-7 h-7 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">✕</button>
         <h2 class="text-sm font-bold text-white mb-1">Share Shabin T. R's Card</h2>
-        <p class="text-[11px] text-slate-400 mb-3">Scan QR code or share digital business card link directly.</p>
+        <p class="text-[11px] text-slate-400 mb-3">Clients opening this link or QR will see your selected <span id="shareThemeBadge" class="font-semibold text-amber-400">Obsidian Gold Aurora</span> theme.</p>
 
         <div class="mb-4 p-2.5 bg-white rounded-2xl inline-block shadow-inner">
-          <svg class="w-36 h-36 text-slate-950" viewBox="0 0 33 33" shape-rendering="crispEdges" fill="currentColor">
+          <svg id="shareModalSvg" class="w-36 h-36 text-slate-950" viewBox="0 0 33 33" shape-rendering="crispEdges" fill="currentColor">
             <path d="M2 2h1v1h-1zM3 2h1v1h-1zM4 2h1v1h-1zM5 2h1v1h-1zM6 2h1v1h-1zM7 2h1v1h-1zM8 2h1v1h-1zM11 2h1v1h-1zM14 2h1v1h-1zM16 2h1v1h-1zM19 2h1v1h-1zM20 2h1v1h-1zM21 2h1v1h-1zM24 2h1v1h-1zM25 2h1v1h-1zM26 2h1v1h-1zM27 2h1v1h-1zM28 2h1v1h-1zM29 2h1v1h-1zM30 2h1v1h-1zM2 3h1v1h-1zM8 3h1v1h-1zM10 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM14 3h1v1h-1zM15 3h1v1h-1zM16 3h1v1h-1zM17 3h1v1h-1zM18 3h1v1h-1zM19 3h1v1h-1zM21 3h1v1h-1zM24 3h1v1h-1zM30 3h1v1h-1zM2 4h1v1h-1zM4 4h1v1h-1zM5 4h1v1h-1zM6 4h1v1h-1zM8 4h1v1h-1zM11 4h1v1h-1zM12 4h1v1h-1zM16 4h1v1h-1zM17 4h1v1h-1zM20 4h1v1h-1zM24 4h1v1h-1zM26 4h1v1h-1zM27 4h1v1h-1zM28 4h1v1h-1zM30 4h1v1h-1zM2 5h1v1h-1zM4 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM8 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM14 5h1v1h-1zM15 5h1v1h-1zM16 5h1v1h-1zM18 5h1v1h-1zM20 5h1v1h-1zM21 5h1v1h-1zM22 5h1v1h-1zM24 5h1v1h-1zM26 5h1v1h-1zM27 5h1v1h-1zM28 5h1v1h-1zM30 5h1v1h-1zM2 6h1v1h-1zM4 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM8 6h1v1h-1zM10 6h1v1h-1zM11 6h1v1h-1zM14 6h1v1h-1zM16 6h1v1h-1zM21 6h1v1h-1zM24 6h1v1h-1zM26 6h1v1h-1zM27 6h1v1h-1zM28 6h1v1h-1zM30 6h1v1h-1zM2 7h1v1h-1zM8 7h1v1h-1zM14 7h1v1h-1zM17 7h1v1h-1zM19 7h1v1h-1zM20 7h1v1h-1zM21 7h1v1h-1zM22 7h1v1h-1zM24 7h1v1h-1zM30 7h1v1h-1zM2 8h1v1h-1zM3 8h1v1h-1zM4 8h1v1h-1zM5 8h1v1h-1zM6 8h1v1h-1zM7 8h1v1h-1zM8 8h1v1h-1zM10 8h1v1h-1zM12 8h1v1h-1zM14 8h1v1h-1zM16 8h1v1h-1zM18 8h1v1h-1zM20 8h1v1h-1zM22 8h1v1h-1zM24 8h1v1h-1zM25 8h1v1h-1zM26 8h1v1h-1zM27 8h1v1h-1zM28 8h1v1h-1zM29 8h1v1h-1zM30 8h1v1h-1zM11 9h1v1h-1zM12 9h1v1h-1zM15 9h1v1h-1zM16 9h1v1h-1zM18 9h1v1h-1zM19 9h1v1h-1zM20 9h1v1h-1zM21 9h1v1h-1zM2 10h1v1h-1zM4 10h1v1h-1zM6 10h1v1h-1zM8 10h1v1h-1zM11 10h1v1h-1zM12 10h1v1h-1zM13 10h1v1h-1zM14 10h1v1h-1zM15 10h1v1h-1zM16 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM19 10h1v1h-1zM21 10h1v1h-1zM22 10h1v1h-1zM26 10h1v1h-1zM29 10h1v1h-1zM3 11h1v1h-1zM4 11h1v1h-1zM5 11h1v1h-1zM6 11h1v1h-1zM9 11h1v1h-1zM11 11h1v1h-1zM13 11h1v1h-1zM18 11h1v1h-1zM19 11h1v1h-1zM22 11h1v1h-1zM23 11h1v1h-1zM24 11h1v1h-1zM27 11h1v1h-1zM30 11h1v1h-1zM2 12h1v1h-1zM3 12h1v1h-1zM4 12h1v1h-1zM6 12h1v1h-1zM7 12h1v1h-1zM8 12h1v1h-1zM9 12h1v1h-1zM14 12h1v1h-1zM15 12h1v1h-1zM19 12h1v1h-1zM20 12h1v1h-1zM28 12h1v1h-1zM29 12h1v1h-1zM30 12h1v1h-1zM3 13h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM6 13h1v1h-1zM7 13h1v1h-1zM9 13h1v1h-1zM11 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM17 13h1v1h-1zM19 13h1v1h-1zM22 13h1v1h-1zM25 13h1v1h-1zM29 13h1v1h-1zM2 14h1v1h-1zM4 14h1v1h-1zM5 14h1v1h-1zM6 14h1v1h-1zM7 14h1v1h-1zM8 14h1v1h-1zM9 14h1v1h-1zM10 14h1v1h-1zM11 14h1v1h-1zM13 14h1v1h-1zM14 14h1v1h-1zM16 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM19 14h1v1h-1zM20 14h1v1h-1zM22 14h1v1h-1zM23 14h1v1h-1zM24 14h1v1h-1zM27 14h1v1h-1zM29 14h1v1h-1zM30 14h1v1h-1zM5 15h1v1h-1zM6 15h1v1h-1zM10 15h1v1h-1zM11 15h1v1h-1zM18 15h1v1h-1zM22 15h1v1h-1zM23 15h1v1h-1zM24 15h1v1h-1zM27 15h1v1h-1zM30 15h1v1h-1zM3 16h1v1h-1zM5 16h1v1h-1zM6 16h1v1h-1zM8 16h1v1h-1zM9 16h1v1h-1zM10 16h1v1h-1zM12 16h1v1h-1zM13 16h1v1h-1zM14 16h1v1h-1zM15 16h1v1h-1zM18 16h1v1h-1zM19 16h1v1h-1zM22 16h1v1h-1zM23 16h1v1h-1zM25 16h1v1h-1zM26 16h1v1h-1zM27 16h1v1h-1zM29 16h1v1h-1zM30 16h1v1h-1zM5 17h1v1h-1zM9 17h1v1h-1zM10 17h1v1h-1zM11 17h1v1h-1zM12 17h1v1h-1zM14 17h1v1h-1zM19 17h1v1h-1zM22 17h1v1h-1zM23 17h1v1h-1zM24 17h1v1h-1zM25 17h1v1h-1zM27 17h1v1h-1zM29 17h1v1h-1zM2 18h1v1h-1zM4 18h1v1h-1zM6 18h1v1h-1zM7 18h1v1h-1zM8 18h1v1h-1zM11 18h1v1h-1zM12 18h1v1h-1zM13 18h1v1h-1zM14 18h1v1h-1zM18 18h1v1h-1zM19 18h1v1h-1zM21 18h1v1h-1zM22 18h1v1h-1zM24 18h1v1h-1zM27 18h1v1h-1zM29 18h1v1h-1zM30 18h1v1h-1zM4 19h1v1h-1zM10 19h1v1h-1zM11 19h1v1h-1zM13 19h1v1h-1zM14 19h1v1h-1zM15 19h1v1h-1zM18 19h1v1h-1zM24 19h1v1h-1zM27 19h1v1h-1zM28 19h1v1h-1zM30 19h1v1h-1zM2 20h1v1h-1zM4 20h1v1h-1zM5 20h1v1h-1zM6 20h1v1h-1zM7 20h1v1h-1zM8 20h1v1h-1zM13 20h1v1h-1zM14 20h1v1h-1zM16 20h1v1h-1zM20 20h1v1h-1zM24 20h1v1h-1zM26 20h1v1h-1zM29 20h1v1h-1zM30 20h1v1h-1zM3 21h1v1h-1zM4 21h1v1h-1zM7 21h1v1h-1zM11 21h1v1h-1zM15 21h1v1h-1zM16 21h1v1h-1zM17 21h1v1h-1zM19 21h1v1h-1zM20 21h1v1h-1zM23 21h1v1h-1zM24 21h1v1h-1zM25 21h1v1h-1zM26 21h1v1h-1zM27 21h1v1h-1zM29 21h1v1h-1zM2 22h1v1h-1zM5 22h1v1h-1zM7 22h1v1h-1zM8 22h1v1h-1zM9 22h1v1h-1zM10 22h1v1h-1zM11 22h1v1h-1zM13 22h1v1h-1zM14 22h1v1h-1zM16 22h1v1h-1zM18 22h1v1h-1zM19 22h1v1h-1zM22 22h1v1h-1zM23 22h1v1h-1zM24 22h1v1h-1zM25 22h1v1h-1zM26 22h1v1h-1zM10 23h1v1h-1zM11 23h1v1h-1zM12 23h1v1h-1zM14 23h1v1h-1zM16 23h1v1h-1zM18 23h1v1h-1zM22 23h1v1h-1zM26 23h1v1h-1zM28 23h1v1h-1zM29 23h1v1h-1zM30 23h1v1h-1zM2 24h1v1h-1zM3 24h1v1h-1zM4 24h1v1h-1zM5 24h1v1h-1zM6 24h1v1h-1zM7 24h1v1h-1zM8 24h1v1h-1zM15 24h1v1h-1zM18 24h1v1h-1zM19 24h1v1h-1zM21 24h1v1h-1zM22 24h1v1h-1zM24 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM29 24h1v1h-1zM30 24h1v1h-1zM2 25h1v1h-1zM8 25h1v1h-1zM11 25h1v1h-1zM12 25h1v1h-1zM13 25h1v1h-1zM14 25h1v1h-1zM17 25h1v1h-1zM19 25h1v1h-1zM20 25h1v1h-1zM21 25h1v1h-1zM22 25h1v1h-1zM26 25h1v1h-1zM27 25h1v1h-1zM30 25h1v1h-1zM2 26h1v1h-1zM4 26h1v1h-1zM5 26h1v1h-1zM6 26h1v1h-1zM8 26h1v1h-1zM10 26h1v1h-1zM12 26h1v1h-1zM13 26h1v1h-1zM14 26h1v1h-1zM17 26h1v1h-1zM18 26h1v1h-1zM19 26h1v1h-1zM20 26h1v1h-1zM22 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM25 26h1v1h-1zM26 26h1v1h-1zM29 26h1v1h-1zM30 26h1v1h-1zM2 27h1v1h-1zM4 27h1v1h-1zM5 27h1v1h-1zM6 27h1v1h-1zM8 27h1v1h-1zM11 27h1v1h-1zM12 27h1v1h-1zM15 27h1v1h-1zM18 27h1v1h-1zM21 27h1v1h-1zM22 27h1v1h-1zM23 27h1v1h-1zM25 27h1v1h-1zM26 27h1v1h-1zM28 27h1v1h-1zM29 27h1v1h-1zM30 27h1v1h-1zM2 28h1v1h-1zM4 28h1v1h-1zM5 28h1v1h-1zM6 28h1v1h-1zM8 28h1v1h-1zM10 28h1v1h-1zM11 28h1v1h-1zM14 28h1v1h-1zM15 28h1v1h-1zM16 28h1v1h-1zM19 28h1v1h-1zM22 28h1v1h-1zM23 28h1v1h-1zM25 28h1v1h-1zM26 28h1v1h-1zM27 28h1v1h-1zM30 28h1v1h-1zM2 29h1v1h-1zM8 29h1v1h-1zM11 29h1v1h-1zM12 29h1v1h-1zM13 29h1v1h-1zM15 29h1v1h-1zM19 29h1v1h-1zM20 29h1v1h-1zM22 29h1v1h-1zM23 29h1v1h-1zM26 29h1v1h-1zM29 29h1v1h-1zM2 30h1v1h-1zM3 30h1v1h-1zM4 30h1v1h-1zM5 30h1v1h-1zM6 30h1v1h-1zM7 30h1v1h-1zM8 30h1v1h-1zM10 30h1v1h-1zM11 30h1v1h-1zM14 30h1v1h-1zM15 30h1v1h-1zM16 30h1v1h-1zM22 30h1v1h-1zM26 30h1v1h-1zM27 30h1v1h-1zM29 30h1v1h-1zM30 30h1v1h-1z" />
           </svg>
         </div>
@@ -809,26 +878,37 @@
           </button>
         </div>
 
-        <button onclick="copyToClipboard('https://shabin2223.github.io/Shabin_DC/', 'Card link copied!')" class="w-full py-2.5 px-3 rounded-xl text-slate-950 text-xs font-bold shadow hover:opacity-90 transition" style="background: linear-gradient(to right, #FBBF24, #F59E0B);">
-          Copy Card Link
+        <button onclick="copyShareableCardLink()" class="w-full py-2.5 px-3 rounded-xl text-slate-950 text-xs font-bold shadow hover:opacity-90 transition" style="background: linear-gradient(to right, #FBBF24, #F59E0B);">
+          Copy Theme Card Link
         </button>
       </div>
     </div>
 
-    <!-- Cover Photo / Scenario Gallery Modal (LinkedIn & Facebook Style) -->
+    <!-- Executive Backdrop & Theme Style Switcher Modal -->
     <div id="coverModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-      <div class="border border-slate-800 p-5 rounded-3xl w-full text-left relative shadow-2xl" style="background-color: #141f36; max-width: 390px;">
+      <div class="card-surface border p-5 rounded-3xl w-full text-left relative shadow-2xl" style="max-width: 390px;">
         <button onclick="closeCoverModal()" aria-label="Close Cover Modal" class="absolute top-4 right-4 w-7 h-7 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">✕</button>
         
         <div class="flex items-center gap-2 mb-1">
-          <div class="w-2 h-2 rounded-full" style="background-color: #F59E0B;"></div>
-          <h2 class="text-sm font-bold text-white">Profile Cover Background</h2>
+          <div class="w-2 h-2 rounded-full animate-pulse" style="background-color: #F59E0B;"></div>
+          <h2 class="text-sm font-bold text-white">Executive Backdrop &amp; Aurora Theme</h2>
         </div>
-        <p class="text-[11px] text-slate-400 mb-3.5">Choose an executive office scenario, architectural backdrop, or upload your own LinkedIn/Facebook-style cover photo.</p>
+        <p class="text-[11px] text-slate-400 mb-3.5">Pick a theme below — your share link &amp; QR code automatically update so clients see the exact theme you select.</p>
 
         <!-- Preset Cover Scenarios Grid -->
-        <div id="coverGalleryGrid" class="grid grid-cols-2 gap-2.5 mb-3.5" style="max-height: 270px; overflow-y: auto; padding-right: 2px;">
+        <div id="coverGalleryGrid" class="grid grid-cols-2 gap-2.5 mb-3.5" style="max-height: 250px; overflow-y: auto; padding-right: 2px;">
           <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Instant Shareable Theme Link Bar -->
+        <div class="p-2.5 rounded-xl bg-slate-900/90 border border-slate-800 mb-3 flex items-center justify-between gap-2">
+          <div class="min-w-0 flex-1">
+            <div class="text-[10px] text-slate-400">Client Share Link (Auto-synced with theme)</div>
+            <div id="themeShareUrlPreview" class="text-[11px] font-mono text-amber-400 break-all leading-tight mt-0.5">https://shabin2223.github.io/Shabin_DC/</div>
+          </div>
+          <button type="button" onclick="copyShareableCardLink()" class="px-2.5 py-1.5 rounded-lg text-slate-950 text-[11px] font-bold shrink-0 transition active:scale-95" style="background: linear-gradient(to right, #FBBF24, #F59E0B);">
+            Copy Link
+          </button>
         </div>
 
         <!-- Custom Upload & Image URL Section -->
@@ -838,7 +918,7 @@
               <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
               </svg>
-              <span>Upload Custom Photo</span>
+              <span>Upload Custom Backdrop</span>
             </label>
             <input type="file" id="customCoverUpload" accept="image/*" class="hidden" onchange="handleCustomCoverUpload(event)" />
           </div>
@@ -878,53 +958,77 @@
       themeColor: "#F59E0B"
     };
 
-    // Curated LinkedIn/Facebook Style Cover Scenarios (Executive Workspace & Office Architecture + Scenic)
+    // Curated Executive Obsidian & Abstract Geometric Aurora Backdrops
     const COVER_SCENARIOS = [
       {
-        id: 'exec-suite',
-        title: 'Executive Suite',
-        subtitle: 'Modern Office Workspace',
-        type: 'image',
-        url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80'
+        id: 'obsidian-gold-aurora',
+        slug: 'gold',
+        title: 'Obsidian Gold Aurora',
+        subtitle: 'Luxury Gold & Indigo Mesh',
+        type: 'aurora',
+        gradient: 'radial-gradient(circle at 85% 20%, rgba(245, 158, 11, 0.42) 0%, rgba(180, 83, 9, 0.18) 38%, transparent 70%), radial-gradient(circle at 15% 80%, rgba(79, 70, 229, 0.35) 0%, transparent 65%), linear-gradient(135deg, #050811 0%, #0d1527 50%, #1a1408 100%)',
+        pageBg: 'radial-gradient(at 15% 15%, rgba(245, 158, 11, 0.13) 0px, transparent 50%), radial-gradient(at 85% 20%, rgba(79, 70, 229, 0.15) 0px, transparent 55%), radial-gradient(at 50% 85%, rgba(217, 119, 6, 0.09) 0px, transparent 55%)',
+        orb1: '#F59E0B',
+        orb2: '#6366f1'
       },
       {
-        id: 'corp-boardroom',
-        title: 'Corporate Boardroom',
-        subtitle: 'Executive Operations Lounge',
-        type: 'image',
-        url: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80'
+        id: 'royal-amber-mesh',
+        slug: 'amber',
+        title: 'Imperial Amber Prism',
+        subtitle: 'Warm Executive Gold & Bronze',
+        type: 'aurora',
+        gradient: 'radial-gradient(circle at 80% 25%, rgba(251, 191, 36, 0.45) 0%, rgba(217, 119, 6, 0.22) 42%, transparent 72%), radial-gradient(circle at 20% 75%, rgba(180, 83, 9, 0.32) 0%, transparent 65%), linear-gradient(135deg, #080705 0%, #17120a 52%, #261b07 100%)',
+        pageBg: 'radial-gradient(at 15% 15%, rgba(251, 191, 36, 0.14) 0px, transparent 50%), radial-gradient(at 85% 20%, rgba(217, 119, 6, 0.13) 0px, transparent 55%), radial-gradient(at 50% 85%, rgba(180, 83, 9, 0.1) 0px, transparent 55%)',
+        orb1: '#FBBF24',
+        orb2: '#D97706'
       },
       {
-        id: 'glass-architecture',
-        title: 'Skyline Architecture',
-        subtitle: 'Corporate Glass Towers',
-        type: 'image',
-        url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80'
+        id: 'midnight-sapphire',
+        slug: 'sapphire',
+        title: 'Sapphire & Gold Horizon',
+        subtitle: 'Deep Navy, Cyan & Gold Glow',
+        type: 'aurora',
+        gradient: 'radial-gradient(circle at 85% 18%, rgba(56, 189, 248, 0.38) 0%, rgba(30, 64, 175, 0.22) 45%, transparent 70%), radial-gradient(circle at 18% 82%, rgba(245, 158, 11, 0.32) 0%, transparent 62%), linear-gradient(135deg, #030712 0%, #0a192f 55%, #0f172a 100%)',
+        pageBg: 'radial-gradient(at 15% 15%, rgba(56, 189, 248, 0.13) 0px, transparent 50%), radial-gradient(at 85% 20%, rgba(245, 158, 11, 0.12) 0px, transparent 55%), radial-gradient(at 50% 85%, rgba(37, 99, 235, 0.12) 0px, transparent 55%)',
+        orb1: '#38bdf8',
+        orb2: '#F59E0B'
       },
       {
-        id: 'admin-desk',
-        title: 'Executive Desk',
-        subtitle: 'Planning & Documentation',
-        type: 'image',
-        url: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1000&q=80'
+        id: 'emerald-executive',
+        slug: 'emerald',
+        title: 'Emerald Sovereign',
+        subtitle: 'Wealth Emerald & Gold Matrix',
+        type: 'aurora',
+        gradient: 'radial-gradient(circle at 82% 22%, rgba(16, 185, 129, 0.38) 0%, rgba(5, 150, 105, 0.18) 42%, transparent 70%), radial-gradient(circle at 15% 80%, rgba(245, 158, 11, 0.3) 0%, transparent 65%), linear-gradient(135deg, #04090c 0%, #071c18 52%, #121824 100%)',
+        pageBg: 'radial-gradient(at 15% 15%, rgba(16, 185, 129, 0.12) 0px, transparent 50%), radial-gradient(at 85% 20%, rgba(245, 158, 11, 0.12) 0px, transparent 55%), radial-gradient(at 50% 85%, rgba(5, 150, 105, 0.1) 0px, transparent 55%)',
+        orb1: '#10b981',
+        orb2: '#F59E0B'
       },
       {
-        id: 'scenic-horizon',
-        title: 'Emerald Horizon',
-        subtitle: 'Calm Nature & Hills',
-        type: 'image',
-        url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80'
+        id: 'amethyst-velvet',
+        slug: 'amethyst',
+        title: 'Velvet Amethyst & Gold',
+        subtitle: 'Royal Violet & Champagne Mesh',
+        type: 'aurora',
+        gradient: 'radial-gradient(circle at 84% 20%, rgba(168, 85, 247, 0.38) 0%, rgba(109, 40, 217, 0.2) 42%, transparent 70%), radial-gradient(circle at 18% 78%, rgba(245, 158, 11, 0.34) 0%, transparent 65%), linear-gradient(135deg, #070510 0%, #150d2a 52%, #1a1215 100%)',
+        pageBg: 'radial-gradient(at 15% 15%, rgba(168, 85, 247, 0.13) 0px, transparent 50%), radial-gradient(at 85% 20%, rgba(245, 158, 11, 0.12) 0px, transparent 55%), radial-gradient(at 50% 85%, rgba(124, 58, 237, 0.1) 0px, transparent 55%)',
+        orb1: '#c084fc',
+        orb2: '#F59E0B'
       },
       {
-        id: 'gold-cyber',
-        title: 'Royal Gold Grid',
-        subtitle: 'Signature Classic Gradient',
-        type: 'gradient',
-        gradient: 'linear-gradient(to top right, #1f1906, #3d2e05, #F59E0B)'
+        id: 'carbon-titanium',
+        slug: 'titanium',
+        title: 'Carbon Titanium Grid',
+        subtitle: 'Minimalist Stealth Slate & Gold',
+        type: 'aurora',
+        gradient: 'radial-gradient(circle at 85% 15%, rgba(245, 158, 11, 0.28) 0%, transparent 60%), radial-gradient(circle at 15% 85%, rgba(148, 163, 184, 0.2) 0%, transparent 60%), linear-gradient(135deg, #030509 0%, #0f172a 50%, #1e293b 100%)',
+        pageBg: 'radial-gradient(at 15% 15%, rgba(148, 163, 184, 0.1) 0px, transparent 50%), radial-gradient(at 85% 20%, rgba(245, 158, 11, 0.1) 0px, transparent 55%)',
+        orb1: '#94a3b8',
+        orb2: '#F59E0B'
       }
     ];
 
-    let activeCoverId = 'exec-suite';
+    let activeCoverId = 'obsidian-gold-aurora';
 
     function renderCoverGallery() {
       const grid = document.getElementById('coverGalleryGrid');
@@ -933,13 +1037,18 @@
         const isActive = item.id === activeCoverId;
         const previewHtml = item.type === 'image'
           ? `<img src="${item.url}" alt="${item.title}" loading="lazy" class="w-full h-16 object-cover object-center" />`
-          : `<div class="w-full h-16" style="background: ${item.gradient};"></div>`;
+          : `<div class="w-full h-16 relative overflow-hidden" style="background: ${item.gradient};">
+               <svg class="absolute inset-0 w-full h-full opacity-35" viewBox="0 0 200 80" fill="none">
+                 <path d="M-10 70 C 50 20, 120 80, 210 15" stroke="${item.orb1 || '#F59E0B'}" stroke-width="1.2"/>
+                 <circle cx="165" cy="24" r="22" stroke="${item.orb1 || '#F59E0B'}" stroke-width="0.8" stroke-dasharray="2 3"/>
+               </svg>
+             </div>`;
 
         return `
           <button type="button" onclick="selectCoverScenario('${item.id}')" class="cover-thumb ${isActive ? 'active' : ''}">
             <div class="relative w-full h-16 overflow-hidden">
               ${previewHtml}
-              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,23,42,0.85), transparent);"></div>
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(8,12,22,0.75), transparent);"></div>
               ${isActive ? '<span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-emerald-500 text-white text-[10px] flex items-center justify-center font-bold shadow">✓</span>' : ''}
             </div>
             <div class="p-2">
@@ -951,6 +1060,222 @@
       }).join('');
     }
 
+    // Dynamic Shareable Theme URL & Offline SVG QR Code Engine
+    function getShareableCardUrl() {
+      const scenario = COVER_SCENARIOS.find(s => s.id === activeCoverId);
+      const slug = scenario && scenario.slug ? scenario.slug : 'gold';
+      return USER_CONFIG.cardUrl + (slug !== 'gold' ? '?theme=' + encodeURIComponent(slug) : '');
+    }
+
+    // Minimalist Self-Contained QR Matrix Generator (Supports Version 1-6, Error Correction L)
+    function generateQrSvgPath(text) {
+      try {
+        const bytes = new TextEncoder().encode(text);
+        const len = bytes.length;
+        // Version selection for Byte mode (EC Level L capacities: V3=53, V4=78, V5=106)
+        const ver = len <= 32 ? 2 : (len <= 53 ? 3 : (len <= 78 ? 4 : 5));
+        const totalDataBytes = [0, 19, 34, 55, 80, 108][ver];
+        const ecBytesCount = [0, 7, 10, 15, 20, 26][ver];
+        const size = 17 + ver * 4;
+
+        // Build data bitstream: Mode 0100 (4 bits) + CharCount (8 bits) + bytes + terminator
+        const bits = [];
+        const pushBits = (val, n) => { for (let i = n - 1; i >= 0; i--) bits.push((val >> i) & 1); };
+        pushBits(4, 4);
+        pushBits(len, 8);
+        for (let i = 0; i < len; i++) pushBits(bytes[i], 8);
+        const maxBits = totalDataBytes * 8;
+        pushBits(0, Math.min(4, maxBits - bits.length));
+        while (bits.length % 8 !== 0) bits.push(0);
+
+        const dataWords = [];
+        for (let i = 0; i < bits.length; i += 8) {
+          let b = 0;
+          for (let j = 0; j < 8; j++) b = (b << 1) | bits[i + j];
+          dataWords.push(b);
+        }
+        let padToggle = true;
+        while (dataWords.length < totalDataBytes) {
+          dataWords.push(padToggle ? 0xEC : 0x11);
+          padToggle = !padToggle;
+        }
+
+        // GF(256) Reed-Solomon Error Correction
+        const gfExp = new Uint8Array(512);
+        const gfLog = new Uint8Array(256);
+        let x = 1;
+        for (let i = 0; i < 255; i++) {
+          gfExp[i] = x;
+          gfLog[x] = i;
+          x <<= 1;
+          if (x & 0x100) x ^= 0x11d;
+        }
+        for (let i = 255; i < 512; i++) gfExp[i] = gfExp[i - 255];
+        const gfMul = (a, b) => (a === 0 || b === 0) ? 0 : gfExp[gfLog[a] + gfLog[b]];
+
+        let gen = [1];
+        for (let i = 0; i < ecBytesCount; i++) {
+          const next = new Array(gen.length + 1).fill(0);
+          for (let j = 0; j < gen.length; j++) {
+            next[j] ^= gen[j];
+            next[j + 1] ^= gfMul(gen[j], gfExp[i]);
+          }
+          gen = next;
+        }
+
+        const msg = dataWords.concat(new Array(ecBytesCount).fill(0));
+        for (let i = 0; i < dataWords.length; i++) {
+          const coef = msg[i];
+          if (coef !== 0) {
+            for (let j = 0; j < gen.length; j++) {
+              msg[i + j] ^= gfMul(gen[j], coef);
+            }
+          }
+        }
+        const codewords = dataWords.concat(msg.slice(dataWords.length));
+
+        // Matrix initialization
+        const mat = Array.from({ length: size }, () => new Int8Array(size).fill(-1));
+        const isFunc = Array.from({ length: size }, () => new Uint8Array(size));
+
+        const setFunc = (r, c, val) => {
+          if (r >= 0 && r < size && c >= 0 && c < size) {
+            mat[r][c] = val ? 1 : 0;
+            isFunc[r][c] = 1;
+          }
+        };
+
+        const drawFinder = (r0, c0) => {
+          for (let dr = -1; dr <= 7; dr++) {
+            for (let dc = -1; dc <= 7; dc++) {
+              const v = (dr >= 0 && dr <= 6 && dc >= 0 && dc <= 6) &&
+                        (dr === 0 || dr === 6 || dc === 0 || dc === 6 || (dr >= 2 && dr <= 4 && dc >= 2 && dc <= 4));
+              setFunc(r0 + dr, c0 + dc, v);
+            }
+          }
+        };
+        drawFinder(0, 0);
+        drawFinder(0, size - 7);
+        drawFinder(size - 7, 0);
+
+        for (let i = 8; i < size - 8; i++) {
+          setFunc(6, i, i % 2 === 0);
+          setFunc(i, 6, i % 2 === 0);
+        }
+
+        // Alignment pattern for V2-V5
+        const alignCenter = [0, 0, 18, 22, 26, 30][ver];
+        if (alignCenter) {
+          for (let dr = -2; dr <= 2; dr++) {
+            for (let dc = -2; dc <= 2; dc++) {
+              setFunc(alignCenter + dr, alignCenter + dc, Math.max(Math.abs(dr), Math.abs(dc)) !== 1);
+            }
+          }
+        }
+
+        // Reserve format info bits
+        for (let i = 0; i < 9; i++) {
+          if (i !== 6) { isFunc[8][i] = 1; isFunc[i][8] = 1; }
+        }
+        for (let i = 0; i < 8; i++) {
+          isFunc[8][size - 1 - i] = 1;
+          isFunc[size - 1 - i][8] = 1;
+        }
+        setFunc(size - 8, 8, 1);
+
+        // Place data bits
+        const allBits = [];
+        for (const w of codewords) {
+          for (let i = 7; i >= 0; i--) allBits.push((w >> i) & 1);
+        }
+        let bitIdx = 0;
+        let upward = true;
+        for (let right = size - 1; right >= 1; right -= 2) {
+          if (right === 6) right = 5;
+          for (let vert = 0; vert < size; vert++) {
+            const r = upward ? size - 1 - vert : vert;
+            for (let j = 0; j < 2; j++) {
+              const c = right - j;
+              if (!isFunc[r][c]) {
+                const bit = bitIdx < allBits.length ? allBits[bitIdx++] : 0;
+                // Mask 0: (r + c) % 2 === 0
+                mat[r][c] = bit ^ ((r + c) % 2 === 0 ? 1 : 0);
+              }
+            }
+          }
+          upward = !upward;
+        }
+
+        // Format info for EC Level L (01) and Mask 0 (000) -> 0x77C4
+        const fmt = 0x77C4;
+        for (let i = 0; i < 6; i++) mat[8][i] = (fmt >> (14 - i)) & 1;
+        mat[8][7] = (fmt >> 8) & 1;
+        mat[8][8] = (fmt >> 7) & 1;
+        mat[7][8] = (fmt >> 6) & 1;
+        for (let i = 9; i < 15; i++) mat[14 - i][8] = (fmt >> (14 - i)) & 1;
+        for (let i = 0; i < 8; i++) mat[8][size - 1 - i] = (fmt >> i) & 1;
+        for (let i = 8; i < 15; i++) mat[size - 15 + i][8] = (fmt >> i) & 1;
+
+        let path = '';
+        const pad = 2;
+        for (let r = 0; r < size; r++) {
+          for (let c = 0; c < size; c++) {
+            if (mat[r][c] === 1) path += `M${c + pad} ${r + pad}h1v1h-1z`;
+          }
+        }
+        return { path, viewBoxSize: size + pad * 2 };
+      } catch (e) {
+        return null;
+      }
+    }
+
+    function updateShareableLinksAndQr() {
+      const shareUrl = getShareableCardUrl();
+      const scenario = COVER_SCENARIOS.find(s => s.id === activeCoverId);
+      const themeTitle = scenario ? scenario.title : 'Custom Backdrop';
+
+      // Sync browser address bar URL cleanly so copying from browser bar also includes ?theme=
+      try {
+        if (window.history && window.history.replaceState) {
+          const urlObj = new URL(window.location.href);
+          if (scenario && scenario.slug && scenario.slug !== 'gold') {
+            urlObj.searchParams.set('theme', scenario.slug);
+          } else {
+            urlObj.searchParams.delete('theme');
+          }
+          window.history.replaceState({}, '', urlObj.toString());
+        }
+      } catch (e) {}
+
+      // Update modal theme badges & live URL preview
+      const qrBadge = document.getElementById('qrThemeBadge');
+      if (qrBadge) qrBadge.innerText = themeTitle;
+      const shareBadge = document.getElementById('shareThemeBadge');
+      if (shareBadge) shareBadge.innerText = themeTitle;
+      const urlPreview = document.getElementById('themeShareUrlPreview');
+      if (urlPreview) urlPreview.innerText = shareUrl;
+
+      // Update QR code SVGs in both QR Modal and Share Modal
+      const qrResult = generateQrSvgPath(shareUrl);
+      if (qrResult && qrResult.path) {
+        ['qrModalSvg', 'shareModalSvg'].forEach(svgId => {
+          const svgEl = document.getElementById(svgId);
+          if (svgEl) {
+            svgEl.setAttribute('viewBox', `0 0 ${qrResult.viewBoxSize} ${qrResult.viewBoxSize}`);
+            const pathEl = svgEl.querySelector('path');
+            if (pathEl) pathEl.setAttribute('d', qrResult.path);
+          }
+        });
+      }
+    }
+
+    function copyShareableCardLink() {
+      const shareUrl = getShareableCardUrl();
+      const scenario = COVER_SCENARIOS.find(s => s.id === activeCoverId);
+      const label = scenario ? scenario.title : 'Card';
+      copyToClipboard(shareUrl, `Link copied with ${label} theme!`);
+    }
+
     function selectCoverScenario(id, silent = false) {
       const scenario = COVER_SCENARIOS.find(s => s.id === id);
       if (!scenario) return;
@@ -959,50 +1284,61 @@
       const imgEl = document.getElementById('coverBannerImg');
       const bannerEl = document.getElementById('coverBanner');
       const labelEl = document.getElementById('activeCoverLabel');
+      const geoSvg = document.getElementById('coverGeoSvg');
+      const auroraLayer = document.getElementById('coverAuroraLayer');
 
       if (scenario.type === 'image') {
         if (imgEl) {
           imgEl.src = scenario.url;
           imgEl.classList.remove('hidden');
         }
+        if (geoSvg) geoSvg.classList.add('hidden');
       } else {
         if (imgEl) imgEl.classList.add('hidden');
+        if (geoSvg) geoSvg.classList.remove('hidden');
+        if (auroraLayer) auroraLayer.classList.remove('hidden');
         if (bannerEl) bannerEl.style.background = scenario.gradient;
+        if (scenario.pageBg) {
+          document.body.style.backgroundImage = scenario.pageBg;
+        }
       }
 
       if (labelEl) labelEl.innerText = scenario.title;
 
       try {
-        localStorage.setItem('shabin_dc_cover_type', 'preset');
-        localStorage.setItem('shabin_dc_cover_id', scenario.id);
+        localStorage.setItem('shabin_dc_exp2_theme_type', 'preset');
+        localStorage.setItem('shabin_dc_exp2_theme_id', scenario.id);
       } catch (e) {}
 
+      updateShareableLinksAndQr();
       renderCoverGallery();
       if (!silent) {
-        showToast('Cover updated: ' + scenario.title);
+        showToast('Theme applied & share link updated: ' + scenario.title);
       }
     }
 
-    function applyCustomCoverImage(dataOrUrl, label = 'Custom Cover', silent = false) {
+    function applyCustomCoverImage(dataOrUrl, label = 'Custom Backdrop', silent = false) {
       activeCoverId = 'custom';
       const imgEl = document.getElementById('coverBannerImg');
       const labelEl = document.getElementById('activeCoverLabel');
+      const geoSvg = document.getElementById('coverGeoSvg');
 
       if (imgEl) {
         imgEl.src = dataOrUrl;
         imgEl.classList.remove('hidden');
       }
+      if (geoSvg) geoSvg.classList.add('hidden');
       if (labelEl) labelEl.innerText = label;
 
       try {
-        localStorage.setItem('shabin_dc_cover_type', 'custom');
-        localStorage.setItem('shabin_dc_cover_custom_src', dataOrUrl);
+        localStorage.setItem('shabin_dc_exp2_theme_type', 'custom');
+        localStorage.setItem('shabin_dc_exp2_theme_custom_src', dataOrUrl);
       } catch (e) {}
 
       renderCoverGallery();
       if (!silent) {
         closeCoverModal();
-        showToast('Custom cover photo applied!');
+        showToast('Custom backdrop applied!');
       }
     }
 
@@ -1011,7 +1347,7 @@
       if (!file) return;
       const reader = new FileReader();
       reader.onload = function(e) {
-        applyCustomCoverImage(e.target.result, 'Custom Photo');
+        applyCustomCoverImage(e.target.result, 'Custom Backdrop');
       };
       reader.readAsDataURL(file);
     }
@@ -1022,7 +1358,7 @@
         showToast('Please paste an image URL first');
         return;
       }
-      applyCustomCoverImage(input.value.trim(), 'Custom Cover');
+      applyCustomCoverImage(input.value.trim(), 'Custom Backdrop');
       input.value = '';
     }
 
@@ -1037,15 +1373,26 @@
 
     window.addEventListener('DOMContentLoaded', () => {
       try {
-        const savedType = localStorage.getItem('shabin_dc_cover_type');
-        if (savedType === 'custom') {
-          const customSrc = localStorage.getItem('shabin_dc_cover_custom_src');
-          if (customSrc) applyCustomCoverImage(customSrc, 'Custom Cover', true);
-        } else if (savedType === 'preset') {
-          const savedId = localStorage.getItem('shabin_dc_cover_id');
-          if (savedId) selectCoverScenario(savedId, true);
+        const params = new URLSearchParams(window.location.search);
+        const urlTheme = (params.get('theme') || '').trim().toLowerCase();
+        const matchedScenario = urlTheme
+          ? COVER_SCENARIOS.find(s => s.slug === urlTheme || s.id === urlTheme || s.id.includes(urlTheme))
+          : null;
+
+        if (matchedScenario) {
+          selectCoverScenario(matchedScenario.id, true);
+        } else {
+          const savedType = localStorage.getItem('shabin_dc_exp2_theme_type');
+          if (savedType === 'custom') {
+            const customSrc = localStorage.getItem('shabin_dc_exp2_theme_custom_src');
+            if (customSrc) applyCustomCoverImage(customSrc, 'Custom Backdrop', true);
+          } else if (savedType === 'preset') {
+            const savedId = localStorage.getItem('shabin_dc_exp2_theme_id');
+            if (savedId) selectCoverScenario(savedId, true);
+          }
         }
       } catch (e) {}
+      updateShareableLinksAndQr();
       renderCoverGallery();
       const txtPhone = document.getElementById('txtPhoneNumber');
       if (txtPhone) txtPhone.innerText = USER_CONFIG.phoneDisplay;
@@ -1107,6 +1454,7 @@
 
     // Modal controls
     function openQRModal() {
+      updateShareableLinksAndQr();
       document.getElementById('qrModal').classList.remove('hidden');
     }
     function closeQRModal() {
@@ -1114,6 +1462,7 @@
     }
 
     function openShareModal() {
+      updateShareableLinksAndQr();
       document.getElementById('shareModal').classList.remove('hidden');
     }
     function closeShareModal() {
@@ -1121,18 +1470,21 @@
     }
 
     function shareWhatsApp() {
-      const text = encodeURIComponent('Digital Card of ' + USER_CONFIG.name + ': ' + USER_CONFIG.cardUrl);
+      const shareUrl = getShareableCardUrl();
+      const text = encodeURIComponent('Digital Card of ' + USER_CONFIG.name + ': ' + shareUrl);
       window.open('https://api.whatsapp.com/send?text=' + text, '_blank');
       closeShareModal();
     }
     function shareEmail() {
+      const shareUrl = getShareableCardUrl();
       const subject = encodeURIComponent(USER_CONFIG.name + ' - ' + USER_CONFIG.position);
-      const body = encodeURIComponent('Please find my digital card: ' + USER_CONFIG.cardUrl);
+      const body = encodeURIComponent('Please find my digital card: ' + shareUrl);
       window.open('mailto:?subject=' + subject + '&body=' + body);
       closeShareModal();
     }
     function shareLinkedIn() {
-      window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(USER_CONFIG.cardUrl), '_blank');
+      const shareUrl = getShareableCardUrl();
+      window.open('https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(shareUrl), '_blank');
       closeShareModal();
     }
 
@@ -1141,6 +1493,7 @@
       const nameParts = USER_CONFIG.name.split(' ');
       const lastName = nameParts.length > 1 ? nameParts[nameParts.length - 1] : '';
       const firstName = nameParts[0] || '';
+      const shareUrl = getShareableCardUrl();
 
       const vcardData = [
         'BEGIN:VCARD',
@@ -1152,7 +1505,7 @@
         'TEL;TYPE=WORK,VOICE:+' + USER_CONFIG.phone,
         'TEL;TYPE=CELL,VOICE:+' + USER_CONFIG.phone,
         'EMAIL;TYPE=PREF,INTERNET:' + USER_CONFIG.email,
-        'URL:' + USER_CONFIG.website,
+        'URL:' + shareUrl,
         'ADR;TYPE=WORK:;;' + USER_CONFIG.address + ';;;;',
         'NOTE:' + USER_CONFIG.position + ' at ' + USER_CONFIG.company + '.',
         'END:VCARD'
