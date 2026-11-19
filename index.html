@@ -266,6 +266,10 @@
     .active\:scale-95:active{transform:scale(.95)}
     .active\:scale-\[0\.98\]:active{transform:scale(.98)}
     .group:hover .group-hover\:scale-110{transform:scale(1.1)}
+    .cover-thumb{position:relative;overflow:hidden;border-radius:0.75rem;border:2px solid rgba(51,65,85,0.6);transition:all 200ms ease;cursor:pointer;text-align:left;background:#0f172a}
+    .cover-thumb:hover{border-color:#94a3b8;transform:translateY(-1px)}
+    .cover-thumb.active{border-color:#F59E0B;box-shadow:0 0 15px -3px rgba(245,158,11,0.45)}
+    .cover-banner-img{transition:opacity 350ms ease,transform 500ms ease}
     @media (min-width:640px){
       .sm\:absolute{position:absolute}
       .sm\:w-32{width:8rem}
@@ -289,12 +293,15 @@
   <!-- ========================================================================= -->
   <main class="w-full max-w-[560px] min-h-screen sm:min-h-0 sm:rounded-3xl sm:border shadow-2xl relative overflow-hidden pb-24" style="background-color: #141f36; border-color: rgba(255, 255, 255, 0.08);">
     
-    <!-- Top Header Cover Banner -->
-    <div class="relative h-40 sm:h-44 w-full overflow-hidden" style="background: linear-gradient(to top right, #1f1906, #3d2e05, #F59E0B);">
-      <!-- Background Cyber Grid & Glow Shapes -->
+    <!-- Top Header Cover Banner (LinkedIn / Facebook Style Cover Photo) -->
+    <div id="coverBanner" class="relative h-44 sm:h-48 w-full overflow-hidden" style="background: linear-gradient(to top right, #1f1906, #3d2e05, #F59E0B);">
+      <!-- Cover Scenario Image Layer -->
+      <img id="coverBannerImg" src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80" alt="Executive Workspace Cover" class="cover-banner-img absolute inset-0 w-full h-full object-cover object-center" />
+      <!-- Dark Vignette & Cyber Grid Overlay for Readability -->
+      <div class="absolute inset-0" style="background: linear-gradient(180deg, rgba(12,19,34,0.45) 0%, rgba(12,19,34,0.2) 50%, rgba(20,31,54,0.95) 100%);"></div>
       <div class="absolute inset-0 opacity-25 [background-size:16px_16px]" style="background-image: radial-gradient(#F59E0B 1px, transparent 1px);"></div>
       <div class="absolute -top-12 -right-12 w-48 h-48 rounded-full filter blur-3xl opacity-35" style="background-color: #F59E0B;"></div>
-      <div class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t" style="background-image: linear-gradient(to top, #141f36, transparent);"></div>
+      <div class="absolute bottom-0 left-0 right-0 h-16" style="background-image: linear-gradient(to top, #141f36, transparent);"></div>
       
       <!-- Top Action Bar -->
       <div class="absolute top-4 left-4 right-4 flex justify-between items-center z-10">
@@ -305,6 +312,11 @@
         </div>
 
         <div class="flex items-center gap-2">
+          <button onclick="openCoverModal()" class="w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-black/60 transition active:scale-95" title="Change Cover Photo" aria-label="Change Cover Photo">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+          </button>
           <button onclick="openShareModal()" class="w-9 h-9 rounded-full bg-black/40 backdrop-blur-md border border-white/10 flex items-center justify-center text-white hover:bg-black/60 transition active:scale-95" title="Share Card" aria-label="Share Card">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
@@ -317,6 +329,15 @@
           </button>
         </div>
       </div>
+
+      <!-- Bottom-Right Cover Changer Pill (LinkedIn / Facebook Style) -->
+      <button onclick="openCoverModal()" class="absolute bottom-3 right-4 z-10 inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-black/50 hover:bg-black/60 backdrop-blur-md border border-white/10 text-[10px] font-semibold text-slate-200 transition active:scale-95 shadow-md" title="Choose Cover Scenario">
+        <svg class="w-3.5 h-3.5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+        </svg>
+        <span id="activeCoverLabel">Executive Suite</span>
+      </button>
     </div>
 
     <!-- ========================================================================= -->
@@ -363,7 +384,7 @@
           Save Contact
         </button>
         <a id="btnWhatsAppHeader" href="https://wa.me/916235712497?text=Hello%20Shabin%20T.%20R,%20I%20got%20your%20digital%20card." target="_blank" rel="noopener" class="flex items-center justify-center gap-2 py-3 px-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs shadow-md transition active:scale-[0.98]">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.276-.101-.476-.15-.677.15-.2.302-.777.98-.953 1.18-.176.201-.351.226-.652.076-.301-.151-1.272-.469-2.423-1.496-.896-.799-1.501-1.787-1.677-2.088-.176-.302-.019-.465.132-.615.136-.135.301-.351.452-.527.15-.176.2-.301.301-.502.101-.201.05-.377-.025-.527-.076-.151-.677-1.633-.928-2.235-.245-.587-.494-.508-.677-.517-.176-.01-.377-.01-.577-.01-.201 0-.527.075-.803.376s-1.054 1.03-1.054 2.511c0 1.482 1.079 2.912 1.23 3.113.15.201 2.122 3.24 5.141 4.544.718.31 1.279.496 1.716.634.721.23 1.377.197 1.896.12.578-.087 1.78-.727 2.03-1.43.251-.703.176-1.305.176-1.43-.075-.126-.276-.201-.577-.352zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/></svg>
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.474 1.332 4.988L2 22l5.18-1.359c1.464.798 3.111 1.219 4.848 1.219 5.516 0 9.969-4.453 9.969-9.969 0-2.664-1.037-5.168-2.921-7.051C17.193 2.956 14.695 2 12.031 2zm0 1.682c2.213 0 4.293.863 5.858 2.429 1.564 1.565 2.425 3.646 2.425 5.859 0 4.568-3.716 8.285-8.286 8.285-1.487 0-2.946-.398-4.221-1.153l-.303-.18-3.141.824.839-3.061-.197-.314a8.234 8.234 0 01-1.26-4.401c0-4.569 3.717-8.288 8.286-8.288zm-3.575 3.635c-.188 0-.488.07-.744.35-.256.28-.978.955-.978 2.329s1.001 2.702 1.141 2.889c.14.186 1.933 3.095 4.773 4.215 2.358.93 2.838.745 3.35.698.512-.046 1.653-.675 1.886-1.328.233-.652.233-1.211.163-1.328-.07-.116-.256-.186-.536-.326-.279-.14-1.653-.816-1.909-.909-.256-.093-.442-.14-.629.14-.186.279-.721.908-.884 1.095-.163.186-.326.21-.605.07-.279-.14-1.18-.435-2.247-1.386-.831-.741-1.391-1.657-1.554-1.936-.163-.28-.018-.431.122-.57.126-.125.279-.326.419-.489.14-.163.186-.28.279-.466.093-.186.047-.349-.023-.489-.07-.14-.614-1.522-.861-2.073-.219-.489-.447-.471-.629-.477-.162-.006-.349-.007-.535-.007z"/></svg>
           WhatsApp
         </a>
       </div>
@@ -377,7 +398,7 @@
         </a>
         <a href="https://wa.me/916235712497" target="_blank" rel="noopener" class="flex flex-col items-center justify-center rounded-xl py-3 px-2 bg-slate-800/60 hover:bg-slate-800 border border-slate-700/60 text-emerald-400 transition active:scale-95">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M17.472 14.382c-.301-.15-1.78-.878-2.056-.979-.276-.101-.476-.15-.677.15-.2.302-.777.98-.953 1.18-.176.201-.351.226-.652.076-.301-.151-1.272-.469-2.423-1.496-.896-.799-1.501-1.787-1.677-2.088-.176-.302-.019-.465.132-.615.136-.135.301-.351.452-.527.15-.176.2-.301.301-.502.101-.201.05-.377-.025-.527-.076-.151-.677-1.633-.928-2.235-.245-.587-.494-.508-.677-.517-.176-.01-.377-.01-.577-.01-.201 0-.527.075-.803.376s-1.054 1.03-1.054 2.511c0 1.482 1.079 2.912 1.23 3.113.15.201 2.122 3.24 5.141 4.544.718.31 1.279.496 1.716.634.721.23 1.377.197 1.896.12.578-.087 1.78-.727 2.03-1.43.251-.703.176-1.305.176-1.43-.075-.126-.276-.201-.577-.352zM12 2C6.477 2 2 6.477 2 12c0 1.89.525 3.66 1.438 5.168L2 22l4.98-1.308A9.957 9.957 0 0012 22c5.523 0 10-4.477 10-10S17.523 2 12 2z"/>
+            <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.474 1.332 4.988L2 22l5.18-1.359c1.464.798 3.111 1.219 4.848 1.219 5.516 0 9.969-4.453 9.969-9.969 0-2.664-1.037-5.168-2.921-7.051C17.193 2.956 14.695 2 12.031 2zm0 1.682c2.213 0 4.293.863 5.858 2.429 1.564 1.565 2.425 3.646 2.425 5.859 0 4.568-3.716 8.285-8.286 8.285-1.487 0-2.946-.398-4.221-1.153l-.303-.18-3.141.824.839-3.061-.197-.314a8.234 8.234 0 01-1.26-4.401c0-4.569 3.717-8.288 8.286-8.288zm-3.575 3.635c-.188 0-.488.07-.744.35-.256.28-.978.955-.978 2.329s1.001 2.702 1.141 2.889c.14.186 1.933 3.095 4.773 4.215 2.358.93 2.838.745 3.35.698.512-.046 1.653-.675 1.886-1.328.233-.652.233-1.211.163-1.328-.07-.116-.256-.186-.536-.326-.279-.14-1.653-.816-1.909-.909-.256-.093-.442-.14-.629.14-.186.279-.721.908-.884 1.095-.163.186-.326.21-.605.07-.279-.14-1.18-.435-2.247-1.386-.831-.741-1.391-1.657-1.554-1.936-.163-.28-.018-.431.122-.57.126-.125.279-.326.419-.489.14-.163.186-.28.279-.466.093-.186.047-.349-.023-.489-.07-.14-.614-1.522-.861-2.073-.219-.489-.447-.471-.629-.477-.162-.006-.349-.007-.535-.007z"/>
           </svg>
           <span class="block text-slate-200 text-xs font-semibold mt-1.5">WhatsApp</span>
         </a>
@@ -711,7 +732,7 @@
           <button type="submit" class="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-slate-950 font-bold text-xs shadow-md transition flex items-center justify-center gap-2">
             <span>Send Direct Message to WhatsApp</span>
             <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0012.04 2z"/>
+              <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.474 1.332 4.988L2 22l5.18-1.359c1.464.798 3.111 1.219 4.848 1.219 5.516 0 9.969-4.453 9.969-9.969 0-2.664-1.037-5.168-2.921-7.051C17.193 2.956 14.695 2 12.031 2zm0 1.682c2.213 0 4.293.863 5.858 2.429 1.564 1.565 2.425 3.646 2.425 5.859 0 4.568-3.716 8.285-8.286 8.285-1.487 0-2.946-.398-4.221-1.153l-.303-.18-3.141.824.839-3.061-.197-.314a8.234 8.234 0 01-1.26-4.401c0-4.569 3.717-8.288 8.286-8.288zm-3.575 3.635c-.188 0-.488.07-.744.35-.256.28-.978.955-.978 2.329s1.001 2.702 1.141 2.889c.14.186 1.933 3.095 4.773 4.215 2.358.93 2.838.745 3.35.698.512-.046 1.653-.675 1.886-1.328.233-.652.233-1.211.163-1.328-.07-.116-.256-.186-.536-.326-.279-.14-1.653-.816-1.909-.909-.256-.093-.442-.14-.629.14-.186.279-.721.908-.884 1.095-.163.186-.326.21-.605.07-.279-.14-1.18-.435-2.247-1.386-.831-.741-1.391-1.657-1.554-1.936-.163-.28-.018-.431.122-.57.126-.125.279-.326.419-.489.14-.163.186-.28.279-.466.093-.186.047-.349-.023-.489-.07-.14-.614-1.522-.861-2.073-.219-.489-.447-.471-.629-.477-.162-.006-.349-.007-.535-.007z"/>
             </svg>
           </button>
         </form>
@@ -773,7 +794,9 @@
         
         <div class="grid grid-cols-3 gap-2 mb-4">
           <button onclick="shareWhatsApp()" class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-emerald-500 text-emerald-400 flex flex-col items-center gap-1">
-            <span class="text-lg">💬</span>
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12.031 2c-5.516 0-9.969 4.453-9.969 9.969 0 1.758.459 3.474 1.332 4.988L2 22l5.18-1.359c1.464.798 3.111 1.219 4.848 1.219 5.516 0 9.969-4.453 9.969-9.969 0-2.664-1.037-5.168-2.921-7.051C17.193 2.956 14.695 2 12.031 2zm0 1.682c2.213 0 4.293.863 5.858 2.429 1.564 1.565 2.425 3.646 2.425 5.859 0 4.568-3.716 8.285-8.286 8.285-1.487 0-2.946-.398-4.221-1.153l-.303-.18-3.141.824.839-3.061-.197-.314a8.234 8.234 0 01-1.26-4.401c0-4.569 3.717-8.288 8.286-8.288zm-3.575 3.635c-.188 0-.488.07-.744.35-.256.28-.978.955-.978 2.329s1.001 2.702 1.141 2.889c.14.186 1.933 3.095 4.773 4.215 2.358.93 2.838.745 3.35.698.512-.046 1.653-.675 1.886-1.328.233-.652.233-1.211.163-1.328-.07-.116-.256-.186-.536-.326-.279-.14-1.653-.816-1.909-.909-.256-.093-.442-.14-.629.14-.186.279-.721.908-.884 1.095-.163.186-.326.21-.605.07-.279-.14-1.18-.435-2.247-1.386-.831-.741-1.391-1.657-1.554-1.936-.163-.28-.018-.431.122-.57.126-.125.279-.326.419-.489.14-.163.186-.28.279-.466.093-.186.047-.349-.023-.489-.07-.14-.614-1.522-.861-2.073-.219-.489-.447-.471-.629-.477-.162-.006-.349-.007-.535-.007z"/>
+            </svg>
             <span class="text-[10px] text-slate-300">WhatsApp</span>
           </button>
           <button onclick="shareEmail()" class="p-2.5 rounded-xl bg-slate-900 border border-slate-800 hover:border-blue-500 text-blue-400 flex flex-col items-center gap-1">
@@ -789,6 +812,44 @@
         <button onclick="copyToClipboard('https://shabin2223.github.io/Shabin_DC/', 'Card link copied!')" class="w-full py-2.5 px-3 rounded-xl text-slate-950 text-xs font-bold shadow hover:opacity-90 transition" style="background: linear-gradient(to right, #FBBF24, #F59E0B);">
           Copy Card Link
         </button>
+      </div>
+    </div>
+
+    <!-- Cover Photo / Scenario Gallery Modal (LinkedIn & Facebook Style) -->
+    <div id="coverModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+      <div class="border border-slate-800 p-5 rounded-3xl w-full text-left relative shadow-2xl" style="background-color: #141f36; max-width: 390px;">
+        <button onclick="closeCoverModal()" aria-label="Close Cover Modal" class="absolute top-4 right-4 w-7 h-7 rounded-full bg-slate-800 text-slate-400 hover:text-white flex items-center justify-center">✕</button>
+        
+        <div class="flex items-center gap-2 mb-1">
+          <div class="w-2 h-2 rounded-full" style="background-color: #F59E0B;"></div>
+          <h2 class="text-sm font-bold text-white">Profile Cover Background</h2>
+        </div>
+        <p class="text-[11px] text-slate-400 mb-3.5">Choose an executive office scenario, architectural backdrop, or upload your own LinkedIn/Facebook-style cover photo.</p>
+
+        <!-- Preset Cover Scenarios Grid -->
+        <div id="coverGalleryGrid" class="grid grid-cols-2 gap-2.5 mb-3.5" style="max-height: 270px; overflow-y: auto; padding-right: 2px;">
+          <!-- Populated dynamically via JS -->
+        </div>
+
+        <!-- Custom Upload & Image URL Section -->
+        <div class="pt-3 border-t border-slate-800 space-y-2.5">
+          <div class="flex items-center gap-2">
+            <label for="customCoverUpload" class="flex-1 py-2 px-3 rounded-xl bg-slate-800 hover:bg-slate-700 border border-slate-700 text-slate-200 text-xs font-semibold flex items-center justify-center gap-1.5 transition active:scale-95" style="cursor: pointer;">
+              <svg class="w-4 h-4 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12" />
+              </svg>
+              <span>Upload Custom Photo</span>
+            </label>
+            <input type="file" id="customCoverUpload" accept="image/*" class="hidden" onchange="handleCustomCoverUpload(event)" />
+          </div>
+
+          <div class="flex items-center gap-1.5">
+            <input type="url" id="customCoverUrl" placeholder="Or paste image URL (https://...)" class="flex-1 px-2.5 py-1.5 rounded-xl bg-slate-900 border border-slate-800 text-[11px] text-white focus:outline-none" />
+            <button onclick="applyCustomCoverUrl()" class="px-3 py-1.5 rounded-xl text-slate-950 text-[11px] font-bold transition active:scale-95" style="background: linear-gradient(to right, #FBBF24, #F59E0B);">
+              Apply
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -817,7 +878,175 @@
       themeColor: "#F59E0B"
     };
 
+    // Curated LinkedIn/Facebook Style Cover Scenarios (Executive Workspace & Office Architecture + Scenic)
+    const COVER_SCENARIOS = [
+      {
+        id: 'exec-suite',
+        title: 'Executive Suite',
+        subtitle: 'Modern Office Workspace',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1000&q=80'
+      },
+      {
+        id: 'corp-boardroom',
+        title: 'Corporate Boardroom',
+        subtitle: 'Executive Operations Lounge',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80'
+      },
+      {
+        id: 'glass-architecture',
+        title: 'Skyline Architecture',
+        subtitle: 'Corporate Glass Towers',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1000&q=80'
+      },
+      {
+        id: 'admin-desk',
+        title: 'Executive Desk',
+        subtitle: 'Planning & Documentation',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1000&q=80'
+      },
+      {
+        id: 'scenic-horizon',
+        title: 'Emerald Horizon',
+        subtitle: 'Calm Nature & Hills',
+        type: 'image',
+        url: 'https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80'
+      },
+      {
+        id: 'gold-cyber',
+        title: 'Royal Gold Grid',
+        subtitle: 'Signature Classic Gradient',
+        type: 'gradient',
+        gradient: 'linear-gradient(to top right, #1f1906, #3d2e05, #F59E0B)'
+      }
+    ];
+
+    let activeCoverId = 'exec-suite';
+
+    function renderCoverGallery() {
+      const grid = document.getElementById('coverGalleryGrid');
+      if (!grid) return;
+      grid.innerHTML = COVER_SCENARIOS.map(item => {
+        const isActive = item.id === activeCoverId;
+        const previewHtml = item.type === 'image'
+          ? `<img src="${item.url}" alt="${item.title}" loading="lazy" class="w-full h-16 object-cover object-center" />`
+          : `<div class="w-full h-16" style="background: ${item.gradient};"></div>`;
+
+        return `
+          <button type="button" onclick="selectCoverScenario('${item.id}')" class="cover-thumb ${isActive ? 'active' : ''}">
+            <div class="relative w-full h-16 overflow-hidden">
+              ${previewHtml}
+              <div class="absolute inset-0" style="background: linear-gradient(to top, rgba(15,23,42,0.85), transparent);"></div>
+              ${isActive ? '<span class="absolute top-1.5 right-1.5 w-4 h-4 rounded-full bg-emerald-500 text-white text-[10px] flex items-center justify-center font-bold shadow">✓</span>' : ''}
+            </div>
+            <div class="p-2">
+              <div class="text-[11px] font-bold text-white leading-tight">${item.title}</div>
+              <div class="text-[10px] text-slate-400 mt-0.5">${item.subtitle}</div>
+            </div>
+          </button>
+        `;
+      }).join('');
+    }
+
+    function selectCoverScenario(id, silent = false) {
+      const scenario = COVER_SCENARIOS.find(s => s.id === id);
+      if (!scenario) return;
+
+      activeCoverId = scenario.id;
+      const imgEl = document.getElementById('coverBannerImg');
+      const bannerEl = document.getElementById('coverBanner');
+      const labelEl = document.getElementById('activeCoverLabel');
+
+      if (scenario.type === 'image') {
+        if (imgEl) {
+          imgEl.src = scenario.url;
+          imgEl.classList.remove('hidden');
+        }
+      } else {
+        if (imgEl) imgEl.classList.add('hidden');
+        if (bannerEl) bannerEl.style.background = scenario.gradient;
+      }
+
+      if (labelEl) labelEl.innerText = scenario.title;
+
+      try {
+        localStorage.setItem('shabin_dc_cover_type', 'preset');
+        localStorage.setItem('shabin_dc_cover_id', scenario.id);
+      } catch (e) {}
+
+      renderCoverGallery();
+      if (!silent) {
+        showToast('Cover updated: ' + scenario.title);
+      }
+    }
+
+    function applyCustomCoverImage(dataOrUrl, label = 'Custom Cover', silent = false) {
+      activeCoverId = 'custom';
+      const imgEl = document.getElementById('coverBannerImg');
+      const labelEl = document.getElementById('activeCoverLabel');
+
+      if (imgEl) {
+        imgEl.src = dataOrUrl;
+        imgEl.classList.remove('hidden');
+      }
+      if (labelEl) labelEl.innerText = label;
+
+      try {
+        localStorage.setItem('shabin_dc_cover_type', 'custom');
+        localStorage.setItem('shabin_dc_cover_custom_src', dataOrUrl);
+      } catch (e) {}
+
+      renderCoverGallery();
+      if (!silent) {
+        closeCoverModal();
+        showToast('Custom cover photo applied!');
+      }
+    }
+
+    function handleCustomCoverUpload(event) {
+      const file = event.target.files && event.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        applyCustomCoverImage(e.target.result, 'Custom Photo');
+      };
+      reader.readAsDataURL(file);
+    }
+
+    function applyCustomCoverUrl() {
+      const input = document.getElementById('customCoverUrl');
+      if (!input || !input.value.trim()) {
+        showToast('Please paste an image URL first');
+        return;
+      }
+      applyCustomCoverImage(input.value.trim(), 'Custom Cover');
+      input.value = '';
+    }
+
+    function openCoverModal() {
+      renderCoverGallery();
+      document.getElementById('coverModal').classList.remove('hidden');
+    }
+
+    function closeCoverModal() {
+      document.getElementById('coverModal').classList.add('hidden');
+    }
+
     window.addEventListener('DOMContentLoaded', () => {
+      try {
+        const savedType = localStorage.getItem('shabin_dc_cover_type');
+        if (savedType === 'custom') {
+          const customSrc = localStorage.getItem('shabin_dc_cover_custom_src');
+          if (customSrc) applyCustomCoverImage(customSrc, 'Custom Cover', true);
+        } else if (savedType === 'preset') {
+          const savedId = localStorage.getItem('shabin_dc_cover_id');
+          if (savedId) selectCoverScenario(savedId, true);
+        }
+      } catch (e) {}
+      renderCoverGallery();
       const txtPhone = document.getElementById('txtPhoneNumber');
       if (txtPhone) txtPhone.innerText = USER_CONFIG.phoneDisplay;
 
